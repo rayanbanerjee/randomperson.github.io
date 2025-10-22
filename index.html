@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rayan Banerjee</title>
+  <meta name="description" content="Rayan Banerjee — personal site" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <img src="assets/main.png" alt="Main graphic" class="main-img" />
+      <h1>Rayan Banerjee</h1>
+      <p class="lead">i build small ml + web things. keeping it simple.</p>
+      <nav aria-label="quick links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>i like clear ideas and short feedback loops. this site is just a quiet place to park stuff i’m doing or learning.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>vidmaker</strong> — something i’ve been working on and off for the past 5 years. the latest iteration takes in a topic and makes a video on it — with images, sound, and narration.</li>
+        <li><strong>deepj</strong> — a deep learning framework written in java. simple but functional, built from scratch.</li>
+      </ul>
+      <p class="note">none of this is “finished”. things get updated when i have time.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="center"><a href="mailto:rayanbanerji@gmail.com">rayanbanerji@gmail.com</a></p>
+      <p class="center">elsewhere: <a href="https://github.com/potato-hue" rel="me">github/potato‑hue</a> · <a href="https://www.kaggle.com/goodcoder" rel="me">kaggle/goodcoder</a></p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> rayan.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
